@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" intial-scale="1.0">
+    <title>Hotel - FACILITIES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark px-lg-3 py-lg-2 shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5 fw-bold fs-3 h-font text-white" href="#">Monarch Haven</a>
+    <button class="navbar-toggler navbar-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" href="facilities.html">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" href="contact us.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="about.html">About</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button type="button" class="btn btn-outline-light shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#LoginModal">
+          Login
+        </button>
+        <button type="button" class="btn btn-outline-light shadow-none" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="LoginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-person-circle fs-3 me-2"></i>User Login</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Your Email</label>
+            <input type="email" class="form-control shadow-none">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control shadow-none">
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+            <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password</a>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="RegisterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form>
+        <div class="modal-header">
+          <h5 class="modal-title">
+          <i class="bi bi-person-lines-fill fs-3 me-2"></i>User Registeration</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+            Note: Your details must match with your ID(Aadhar Card, Passport, Driving Liacence, etc..)
+            that will be requried during check-in.
+          </span>
+          <div class="container-fluid">
+            <div class="raw">
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 p-0 mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="number" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 p-0 mb-3">
+                <label class="form-label">Picture</label>
+                <input type="file" class="form-control shadow-none">
+              </div>
+              <div class="col-md-12 p-0 mb-3">
+                <label class="form-label">Address</label>
+                <textarea class="form-control shadow-none" rows="1"></textarea>
+              </div>
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="form-label">Pincode Number</label>
+                <input type="number" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 p-0 mb-3">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 ps-0 mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control shadow-none">
+              </div>
+              <div class="col-md-6 p-0 mb-3">
+                <label class="form-label">Conform Password</label>
+                <input type="password" class="form-control shadow-none">
+              </div>
+            </div>
+          </div>
+          <div class="text-center my-1">
+          <button type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<div class="ny-5 px-4">
+    <h2 class="fw-bold h-font text-center">OUR FACILITIES</h2>
+    <div class="h-line bg-dark"></div>
+    <p class="text-center mt-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Id incidunt atque porro dolor, voluptate, repellat <br> repellendus 
+        libero perspiciatis praesentium architecto ea asperiores, nulla 
+        iste voluptas voluptatem nemo distinctio suscipit ratione.
+    </p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/1.svg" width="40px">
+                    <h5 class="m-0 ms-3">WI-FI</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/2.svg" width="40px">
+                    <h5 class="m-0 ms-3">TETEVISION</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/3.svg" width="40px">
+                    <h5 class="m-0 ms-3">FIRE-ALARAM</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/4.svg" width="40px">
+                    <h5 class="m-0 ms-3">AC</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/5.svg" width="40px">
+                    <h5 class="m-0 ms-3">GYM</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="images/facilities/6.svg" width="40px">
+                    <h5 class="m-0 ms-3">HEATET</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto quibusdam nulla iste sint tempora.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid bg-dark text-white mt-5 border-top">
+  <div class="row p-4 g-4">
+      <div class="col-lg-3 col-md-6 col-12">
+          <h3 class="h-font fw-bold fs-3 mb-3">Royal HOTEL</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quibusdam unde optio delectus atque voluptates enim possimus incidunt ex distinctio!</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="rooms.html" class="text-white text-decoration-none">Rooms</a></li>
+              <li><a href="facilities.html" class="text-white text-decoration-none">Facilities</a></li>
+              <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+              <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <p>Email: <a href="mailto:abc@gmail.com" class="text-white">abc@gmail.com</a></p>
+          <p>Phone: <a href="tel:+91234567890" class="text-white">+91 234 567 890</a></p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+          <a href="#" class="d-block text-white text-decoration-none mb-2">
+              <i class="bi bi-twitter me-2"></i>Twitter
+          </a>
+          <a href="#" class="d-block text-white text-decoration-none mb-2">
+              <i class="bi bi-facebook me-2"></i>Facebook
+          </a>
+          <a href="#" class="d-block text-white text-decoration-none">
+              <i class="bi bi-instagram me-2"></i>Instagram
+          </a>
+      </div>
+  </div>
+  <div class="text-center bg-secondary text-white p-1">Designed by ABC Designer</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
